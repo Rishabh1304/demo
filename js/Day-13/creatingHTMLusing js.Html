@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Creating HTML Element with JS</title>
+    <style>
+        #parent-container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .card-container{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            border: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            bottom: 5px;
+        }
+        @media only screen and (max-width: 600px) {
+            #parent-container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent-container">
+        <div id="card-container">
+            <img class="image"
+                src="https://media1.thrillophilia.com/filestore/n2ib9inwzcilxpg3aumbigvq4jus_IMG_World_Dubai_Fun_38a0986c1a.jpg?w=400&dpr=2"
+                alt="travel card">
+            <span>The journey of a thousand miles begins with a single step</span>
+        </div>
+    </div>
+
+    <script>
+        for(let i=0;i<5;i++){
+            const parent = document.getElementById("parent-container");
+            const card = document.createElement("div")
+            card.classList.add("card-container")
+            const image = document.createElement("img")
+            image.setAttribute("src","https://media1.thrillophilia.com/filestore/n2ib9inwzcilxpg3aumbigvq4jus_IMG_World_Dubai_Fun_38a0986c1a.jpg?w=400&dpr=2")
+            image.setAttribute("alt","travel card")
+            const text = document.createAttribute("spane")
+            text.innerText = "The journey of a thousand miles begins with a single step"
+            card.appendChild(image);
+            card.appendChild(text);
+            parent.appendChild(card);          
+        }
+    </script>
+</body>
+
+</html>

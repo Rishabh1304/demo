@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h2>javaScript validation</h2>
+
+    <form name="myform" onsubmit="return validateForm()" method="post">
+        age: <input type="number" name="age">
+        <input type="submit" value="submit">
+    </form>
+
+    <script>
+        function validateForm(){""
+            let z=document.forms["myform"]["age"].value
+            if(z<18){
+                alert("age should be greater than 18")
+                return
+            }
+        }
+    </script>
+</body>
+</html>
