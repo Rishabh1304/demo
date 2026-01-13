@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-image: url("data:image/jpeg;base64,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");
+            background-repeat: repeat;
+        }
+
+        img {
+            border: 29px solid;
+            padding: 22px;
+            margin: 44px;
+        }
+
+        ul {
+            list-style-type: "";
+        }
+
+        ol {
+            /*list-style-type:decimal-leading-zero ;
+            list-style-type:lower-alpha ; 
+            list-style-type:upper-roman ; */
+            list-style-type: circle;
+        }
+
+        h1 {
+            /* Add a black background color to all elements */
+            color: aqua;
+        }
+
+        h2 {
+            color: blue;
+        }
+
+        /*background-color: hsl(132, 92%, 38%); */
+        h3 {
+            background-color: aqua;
+        }
+
+        h4 {
+            background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.reddit.com%2Fr%2FNaruto%2Fcomments%2F14ppg1o%2Fkakashi_has_been_hyped_so_many_times_in_the%2F&psig=AOvVaw3_3Z-s7mYnd6NUdvUDQRRs&ust=1752395309232000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNjJyrHzto4DFQAAAAAdAAAAABAE");
+        }
+    </style>
+</head>
+
+<body>
+    <h1># Box model</h1>
+    <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIibPbOeDQQscm9g-fDNdCvROokQJukg8nYQ&s" alt="">
+    </div>
+
+    <h1># List styling</h1>
+
+    <h1>Fruit</h1>
+    <ul>
+        <li>Mango</li>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>pine Apple</li>
+    </ul>
+    <ol>
+        <li>aaa</li>
+        <li>sss</li>
+        <li>ddd</li>
+        <li>fff</li>
+    </ol>
+
+    <h1>#</h1>
+
+    <h2>hi</h2>
+    <h2>hello</h2>
+    <h2>Rishabh</h2>
+
+    <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati quia in corrupti sint nostrum aliquam!
+        Consequuntur, iure temporibus? Rem voluptatum in, inventore nesciunt eos ad dolore assumenda numquam
+        consequuntur harum.</h3>
+
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus beatae dicta quo corporis nesciunt iure
+        inventore nobis, dolore, repudiandae quos sint assumenda mollitia vel, obcaecati possimus aliquam consectetur
+        ab. Cupiditate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus beatae dicta quo corporis nesciunt iure
+        inventore nobis, dolore, repudiandae quos sint assumenda mollitia vel, obcaecati possimus aliquam consectetur
+        ab. Cupiditate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus beatae dicta quo corporis nesciunt iure
+        inventore nobis, dolore, repudiandae quos sint assumenda mollitia vel, obcaecati possimus aliquam consectetur
+        ab. Cupiditate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus beatae dicta quo corporis nesciunt iure
+        inventore nobis, dolore, repudiandae quos sint assumenda mollitia vel, obcaecati possimus aliquam consectetur
+        ab. Cupiditate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus beatae dicta quo corporis nesciunt iure
+        inventore nobis, dolore, repudiandae quos sint assumenda mollitia vel, obcaecati possimus aliquam consectetur
+        ab. Cupiditate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus beatae dicta quo corporis nesciunt iure
+        inventore nobis, dolore, repudiandae quos sint assumenda mollitia vel, obcaecati possimus aliquam consectetur
+        ab. Cupiditate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus beatae dicta quo corporis nesciunt iure
+        inventore nobis, dolore, repudiandae quos sint assumenda mollitia vel, obcaecati possimus aliquam consectetur
+        ab. Cupiditate.
+    </h4>
+</body>
+
+</html>
